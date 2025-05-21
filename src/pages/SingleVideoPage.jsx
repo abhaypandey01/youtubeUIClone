@@ -5,6 +5,7 @@ import Navbar from "../components/Header/Navbar";
 import Sidebar from "../components/Sidebar";
 import VideoRecomendations from "../components/VideoRecomendations";
 import VideoActions from "../components/VideoActions";
+import CommentInput from "../components/CommentInput";
 
 
 export default function SingleVideoPage() {
@@ -50,9 +51,12 @@ export default function SingleVideoPage() {
                             </div>
 
                             <VideoActions />
-                            
-                            <div className="bg-gray-800 text-gray-200 rounded-md p-3 md:p-4 mb-4 text-sm md:text-base break-words">
+
+                            <div className="bg-gray-800 text-gray-200 rounded-md p-3 md:p-4 mb-4 mt-4 text-sm md:text-base break-words">
                                 This is mock description for video.
+                            </div>
+                            <div>
+                                <CommentInput />
                             </div>
                         </div>
 
