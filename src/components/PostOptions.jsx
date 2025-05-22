@@ -34,7 +34,7 @@ function PostOptions() {
                         <MdImage size={25} /> Image
                     </button>
                 </div>
-                <div className="flex mr-6">
+                <div className="flex w-full mr-6">
                     <button className="px-1 py-1 font-semibold flex">
                         <MdPoll size={25} /> Image Poll
                     </button>
