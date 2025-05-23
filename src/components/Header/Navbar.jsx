@@ -1,12 +1,13 @@
 import { FaBars, FaBell, FaMicrophone, FaVideo } from "react-icons/fa"
 import { FiSearch } from "react-icons/fi"
+import { Link } from "react-router-dom";
 
 function Navbar() {
     return (
         <div className="navbar bg-base-100 sticky px-4 shadow-sm top-0 z-50">
             {/* right section */}
             <div className="flex items-center gap-4">
-                <a href="#" className="text-xl font-bold text-red-600">YouTube</a>
+                <Link to={'/'} className="text-xl font-bold text-red-600">YouTube</Link>
             </div>
 
             {/* center section */}

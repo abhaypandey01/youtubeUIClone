@@ -4,7 +4,7 @@ import { MdImage, MdPoll, MdQuiz } from "react-icons/md";
 
 function PostOptions() {
     return (
-        <div className="max-w-[40rem] flex flex-col w-full mt-2 mb-2">
+        <div className="flex flex-col w-full mt-2 mb-2">
             <div className="flex-1 flex py-2 px-1 mt-1 mb-1">
                 <div>
                     <div className="flex items-center justify-center rounded-full bg-blue-600 w-10 h-10 mx-1 font-semibold">
@@ -34,7 +34,7 @@ function PostOptions() {
                         <MdImage size={25} /> Image
                     </button>
                 </div>
-                <div className="flex w-full mr-6">
+                <div className="flex w-full max-w-[7rem] mr-6">
                     <button className="px-1 py-1 font-semibold flex">
                         <MdPoll size={25} /> Image Poll
                     </button>
@@ -50,7 +50,7 @@ function PostOptions() {
                     </button>
                 </div>
                 <div className="w-full flex justify-end">
-                    <button className="mr-6 px-4 py-2 font-semibold rounded-full bg-gray-700 text-gray-500">
+                    <button className="mr-6 px-4 py-1 font-semibold rounded-full bg-gray-700 text-gray-500">
                         Post
                     </button>
                 </div>

@@ -1,15 +1,15 @@
+import { useState } from "react";
 import Navbar from "../components/Header/Navbar";
 import Sidebar from "../components/Sidebar";
 import VideoGrid from "../components/VideoGrid";
 
 export default function Home() {
+    const [isSibebarOpen, setIsSidebarOpen] = useState();
     return (
         <div>
-            <Navbar />
+            <Navbar toggleSidebar={() => setIsSidebarOpen(!isSibebarOpen)} />
             <div className="flex">
-                <div className="hidden md:block sticky top-16 h-[calc(100vh-4rem)]">
-                    <Sidebar />
-                </div>
+                <Sidebar isOpen={isSibebarOpen} />
                 <main className="flex-1">
                     <VideoGrid />
                 </main>
